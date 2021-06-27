@@ -1091,6 +1091,7 @@ static int imxrt_flexcan_interrupt(int irq, FAR void *context,
            */
 
           imxrt_receive(priv, flags);
+          //DCR ADD pull test
         }
 
       flags  = getreg32(priv->base + IMXRT_CAN_IFLAG1_OFFSET);
